@@ -31,15 +31,23 @@ DISK_THRESHOLD = 80  # Percentage
 PROCESS_THRESHOLD = 200  # Number of processes
 
 def monitor_system():
+
     # Check CPU usage
+    
     cpu_usage = psutil.cpu_percent(interval=1)
+    
     if cpu_usage > CPU_THRESHOLD:
+    
         logging.warning(f"High CPU usage detected: {cpu_usage}%")
 
     # Check memory usage
+    
     memory = psutil.virtual_memory()
+    
     memory_usage = memory.percent
+    
     if memory_usage > MEMORY_THRESHOLD:
+    
         logging.warning(f"High memory usage detected: {memory_usage}%")
 
     # Check disk space usage
