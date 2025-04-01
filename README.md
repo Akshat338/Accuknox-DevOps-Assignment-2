@@ -23,8 +23,11 @@ logging.basicConfig(
 
 # Define thresholds
 CPU_THRESHOLD = 80  # Percentage
+
 MEMORY_THRESHOLD = 80  # Percentage
+
 DISK_THRESHOLD = 80  # Percentage
+
 PROCESS_THRESHOLD = 200  # Number of processes
 
 def monitor_system():
