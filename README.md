@@ -109,8 +109,11 @@ logging.basicConfig(
 # Configuration
 
 LOCAL_DIRECTORY = "/path/to/local/directory"  # Replace with the directory to back up
+
 REMOTE_SERVER = "user@remote_server_ip"  # Replace with your remote server's username and IP
+
 REMOTE_DIRECTORY = "/path/to/remote/directory"  # Replace with the directory on the remote server
+
 
 def backup_directory():
 
