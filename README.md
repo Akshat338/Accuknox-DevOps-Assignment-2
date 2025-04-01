@@ -115,6 +115,7 @@ REMOTE_SERVER = "user@remote_server_ip"  # Replace with your remote server's use
 REMOTE_DIRECTORY = "/path/to/remote/directory"  # Replace with the directory on the remote server
 
 
+
 def backup_directory():
 
     try:
