@@ -90,28 +90,44 @@ import logging
 from datetime import datetime
 
 # Set up logging for backup reports
+
 logging.basicConfig(
+
     level=logging.INFO,
+    
     format='%(asctime)s - %(levelname)s - %(message)s',
+    
     handlers=[
+    
         logging.FileHandler("backup_report.log"),
+        
         logging.StreamHandler()
+        
     ]
 )
 
 # Configuration
+
 LOCAL_DIRECTORY = "/path/to/local/directory"  # Replace with the directory to back up
 REMOTE_SERVER = "user@remote_server_ip"  # Replace with your remote server's username and IP
 REMOTE_DIRECTORY = "/path/to/remote/directory"  # Replace with the directory on the remote server
 
 def backup_directory():
+
     try:
+    
         # Construct the rsync command
+        
         command = [
+        
             "rsync",
+            
             "-avz",  # Archive mode, verbose, compressed
+            
             LOCAL_DIRECTORY,
+            
             f"{REMOTE_SERVER}:{REMOTE_DIRECTORY}"
+            
         ]
         
         # Run the rsync command
