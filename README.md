@@ -115,7 +115,7 @@ if __name__ == "__main__":
 ## Explanation:
 
 How It Works:
-1.Configuration:
+### 1.Configuration:
 
 Replace LOCAL_DIRECTORY with the path of the directory you want to back up.
 
@@ -123,19 +123,19 @@ Replace REMOTE_SERVER with your remote server's username and IP address.
 
 Replace REMOTE_DIRECTORY with the path to the directory on the remote server where the backup will be stored.
 
-2.rsync Command:
+### 2.rsync Command:
 
 The rsync command efficiently syncs files and directories from the local machine to the remote server.
 
 It uses the -avz flags for archive mode (preserves file permissions), verbosity, and compression.
 
-3.Logging:
+### 3.Logging:
 
 Logs all backup results in backup_report.log.
 
 Indicates success with detailed output or logs any errors if the operation fails.
 
-4.SSH Authentication:
+### 4.SSH Authentication:
 
 Ensure that passwordless authentication is set up between your local machine and the remote server for rsync to work seamlessly. You can do this by generating SSH keys using ssh-keygen and copying the public key to the remote server using ssh-copy-id.
 
