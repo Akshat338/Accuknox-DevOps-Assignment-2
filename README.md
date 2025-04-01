@@ -117,7 +117,6 @@ REMOTE_DIRECTORY = "/path/to/remote/directory"  # Replace with the directory on 
 
 
 def backup_directory():
-
     try:
     
         # Construct the rsync command
