@@ -55,13 +55,17 @@ if __name__ == "__main__":
         monitor_system()
 
 # Explaination:        
-## 1.psutil: A library used to fetch system metrics like CPU, memory, disk usage, and processes. It must be installed (pip install psutil) to use this script.
+## 1.psutil:
+A library used to fetch system metrics like CPU, memory, disk usage, and processes. It must be installed (pip install psutil) to use this script.
 
-## 2.Thresholds: You can adjust CPU_THRESHOLD, MEMORY_THRESHOLD, DISK_THRESHOLD, and PROCESS_THRESHOLD as needed for your monitoring requirements.
+## 2.Thresholds: 
+You can adjust CPU_THRESHOLD, MEMORY_THRESHOLD, DISK_THRESHOLD, and PROCESS_THRESHOLD as needed for your monitoring requirements.
 
-## 3.Logging: Alerts are both logged to the console and saved in a file called system_health.log.
+## 3.Logging: 
+Alerts are both logged to the console and saved in a file called system_health.log.
 
-## 4.Continuous Monitoring: The script runs indefinitely, checking system health at regular intervals.
+## 4.Continuous Monitoring: 
+The script runs indefinitely, checking system health at regular intervals.
 
 # 2.Automated Backup Solution: 
 Write a script to automate the backup of a specified directory to a remote server or a cloud storage solution. The script should provide a report on the success or failure of the backup operation. 
